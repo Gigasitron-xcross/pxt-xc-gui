@@ -4,7 +4,7 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "test": "libxc_test.a",
+        "test": "libxc_test",
         "microphone": "*"
     },
     "files": [
