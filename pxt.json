@@ -9,6 +9,7 @@
     "files": [
         "main.blocks",
         "main.ts",
+        "libxc_test.a",
         "README.md"
     ],
     "testFiles": [
