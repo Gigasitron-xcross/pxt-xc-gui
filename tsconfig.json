@@ -4,6 +4,9 @@
         "noImplicitAny": true,
         "outDir": "built",
         "rootDir": "."
+         "lib": [
+            "libxc_test"
+        ],
     },
     "exclude": ["pxt_modules/**/*test.ts"]
 }
