@@ -18,6 +18,7 @@
         "inc/XGUI.h",
         "inc/LCD.h",
         "inc/LCD_ST7789_Port.h",
+        "inc/XC_GUI_Types.h",
 
         "images/bmp_clock.c",
         "images/needle_hour120.c",
