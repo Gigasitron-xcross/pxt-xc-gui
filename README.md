@@ -1,24 +1,42 @@
+# XC_GUI for micro:bit V2
 
-> Open this page at [https://gigasitron-xcross.github.io/pxt-xc-gui/](https://gigasitron-xcross.github.io/pxt-xc-gui/)
+This MakeCode extension uses a precompiled XC_GUI/ST7789 static library from:
 
-## Use as Extension
+`https://github.com/Gigasitron-xcross/codal-xc-gui-bin`
 
-This repository can be added as an **extension** in MakeCode.
+The private library repository must export these public headers through its
+CMake include path:
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/gigasitron-xcross/pxt-xc-gui** and import
+- `XGUI.h`
+- `LCD.h`
+- `LCD_ST7789_Port.h`
 
-## Edit this project
+The MakeCode extension contains only:
 
-To edit this repository in MakeCode.
+- TypeScript blocks (`xcgui.ts`)
+- the native MakeCode wrapper (`xcgui.cpp`)
+- the micro:bit-specific SPI/GPIO adapter (`LCD_ST7789_Port.cpp`)
+- the clock demonstration bitmap data
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/gigasitron-xcross/pxt-xc-gui** and click import
+## Test in MakeCode
 
-#### Metadata (used for search, rendering)
+1. Open `https://makecode.microbit.org/`.
+2. Create a new project.
+3. Open **Extensions**.
+4. Paste the GitHub URL of this repository.
+5. Add **initialize XC GUI**.
+6. Run **draw XC GUI frame** inside a `forever` loop with a short pause.
+7. Download the HEX for a micro:bit V2.
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+Example:
+
+```typescript
+xcgui.initialize()
+
+basic.forever(function () {
+    xcgui.drawFrame()
+    basic.pause(10)
+})
+```
+
+The external LCD is not simulated in the MakeCode simulator.
