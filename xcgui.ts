@@ -5,9 +5,7 @@
 //% icon="\uf108"
 //% block="XC GUI"
 namespace xcgui {
-    /**
-     * Initialize the LCD and XC_GUI.
-     */
+    /** Initialize the ST7789 LCD and XC_GUI. */
     //% blockId=xcgui_initialize
     //% block="initialize XC GUI"
     //% weight=100
@@ -16,9 +14,7 @@ namespace xcgui {
         return
     }
 
-    /**
-     * Draw one XC_GUI frame.
-     */
+    /** Draw one XC_GUI frame. */
     //% blockId=xcgui_draw_frame
     //% block="draw XC GUI frame"
     //% weight=90
@@ -27,9 +23,7 @@ namespace xcgui {
         return
     }
 
-    /**
-     * Reset the clock demonstration.
-     */
+    /** Reset the clock demonstration state. */
     //% blockId=xcgui_reset_demo
     //% block="reset XC GUI demo"
     //% weight=80
