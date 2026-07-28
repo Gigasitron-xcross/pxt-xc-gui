@@ -1,25 +1,36 @@
 {
-    "name": "pxt-xc-gui",
-    "description": "",
+    "name": "xc-gui",
+    "version": "0.0.1",
+    "description": "XC_GUI for micro:bit V2",
+    "license": "All rights reserved",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "core": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
-        "README.md"
+        "README.md",
+        "xcgui.ts",
+        "xcgui.cpp",
+        "XGUI.h",
+        "LCD_ST7789.c",
+        "LCD_ST7789.h",
+        "LCD_ST7789_Port.cpp",
+        "LCD_ST7789_Port.h"
     ],
+    "codal": {
+        "libraries": [
+            "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#v0.0.1"
+        ]
+    },
     "testFiles": [
         "test.ts"
     ],
-    "targetVersions": {
-        "target": "9.0.8",
-        "targetId": "microbit"
-    },
+    "public": true,
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj",
+    "disablesVariants": [
+        "mbdal"
+    ],
+    "binaryonly": true
 }
