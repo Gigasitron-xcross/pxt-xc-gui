@@ -26,11 +26,14 @@
         "images/needle_sec120.c"
     ],
 
-    "codal": {
-        "libraries": [
-            "github:Gigasitron-xcross/codal-xc-gui-bin#v0.0.3"
-        ]
-    },
+    "libraries":[
+        {
+            "name":"codal-xc-gui-bin",
+            "url":"https://github.com/Gigasitron-xcross/codal-xc-gui-bin",
+            "branch":"main",
+            "type":"git"
+        }
+    ],
 
     "testFiles": [
         "test.ts"
