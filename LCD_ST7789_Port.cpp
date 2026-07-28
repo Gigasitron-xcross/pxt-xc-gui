@@ -1,6 +1,6 @@
 #include "pxt.h"
 #include "NRF52SPI.h"
-#include "LCD_ST7789_Port.h"
+#include "inc/LCD_ST7789_Port.h"
 
 using namespace pxt;
 using namespace codal;
