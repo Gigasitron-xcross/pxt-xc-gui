@@ -3,34 +3,44 @@
     "version": "0.0.1",
     "description": "XC_GUI for micro:bit V2",
     "license": "All rights reserved",
+
     "dependencies": {
         "core": "*"
     },
+
     "files": [
         "README.md",
         "xcgui.ts",
         "xcgui.cpp",
         "LCD_ST7789_Port.cpp",
+
         "images/bmp_clock.c",
         "images/needle_hour120.c",
         "images/needle_min120.c",
         "images/needle_sec120.c"
     ],
+
     "codal": {
         "libraries": [
-            "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#v0.0.1"
+            "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#main"
         ]
     },
+
     "testFiles": [
         "test.ts"
     ],
+
     "public": true,
+
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj",
+
     "disablesVariants": [
         "mbdal"
     ],
+
+    "preferredEditor": "tsprj",
+
     "binaryonly": true
 }
