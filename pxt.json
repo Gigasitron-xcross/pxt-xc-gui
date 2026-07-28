@@ -28,7 +28,7 @@
 
     "codal": {
         "libraries": [
-            "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#main"
+            "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#v0.0.3"
         ]
     },
 
@@ -41,8 +41,6 @@
     "supportedTargets": [
         "microbit"
     ],
-
-    "preferredEditor": "tsprj",
 
     "compileServiceVariant": "mbcodal",
 
