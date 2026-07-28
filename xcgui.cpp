@@ -23,7 +23,7 @@ extern "C"
     extern const uint16_t bmpneedle_sec120[];
 }
 
-namespace
+namespace 
 {
     /* Same buffer sizes as the working CODAL test application. */
     static XC_DATA g_aBuf[4096 * 2];
