@@ -16,21 +16,24 @@
         "images/needle_min120.c",
         "images/needle_sec120.c"
     ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "9.0.8",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
     "codal": {
         "libraries": [
             "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#v0.0.1"
         ]
     },
-    "testFiles": [
-        "test.ts"
-    ],
-    "public": true,
-    "supportedTargets": [
-        "microbit"
-    ],
-    "preferredEditor": "blocksprj",
     "disablesVariants": [
         "mbdal"
-    ],
-    "binaryonly": true
+    ]
 }
