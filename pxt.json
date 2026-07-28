@@ -18,7 +18,7 @@
     ],
     "codal": {
         "libraries": [
-            "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#main"
+            "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#v0.0.2"
         ]
     },
     "testFiles": [
