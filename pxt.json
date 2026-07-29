@@ -6,7 +6,7 @@
 
     "dependencies": {
         "core": "*",
-        "XCGUI": "https://github.com/Gigasitron-xcross/codal-xc-gui-bin#v0.0.4"
+        "XCGUI": "github:Gigasitron-xcross/codal-xc-gui-bin#v0.0.4"
     },
 
     "files": [
