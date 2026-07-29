@@ -5,8 +5,7 @@
     "license": "All rights reserved",
 
     "dependencies": {
-        "core": "*",
-        "codal-xc-gui-bin": "github:Gigasitron-xcross/codal-xc-gui-bin"
+        "core": "*"
     },
 
     "files": [
